@@ -50,7 +50,7 @@ export function NavigationMenuGeneral() {
                     <h3 className="text-lg font-bold">🎛️ Dashboard</h3>
                     <div className="my-2" />
                     <p className="text-xs">
-                      The TurboETH Dashboard is a great place to start. It&apos;s where you can see your app&apos;s features, and get started.
+                     Welcome to your new playground! This is where you can test out all of the Turbo Metaverse features.
                     </p>
                   </div>
                 </LinkComponent>
