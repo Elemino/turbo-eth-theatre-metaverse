@@ -10,8 +10,8 @@ const nextConfig = {
   env: {
     mode=: process.env.NODE_ENV,
     NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
-    NEXT_URL:http://localhost:3001,
-    NEXTAUTH_URL:http://localhost:3001,
+    NEXT_URL: process.env.NEXT_URL,
+
 
 DATABASE_NAME=iztalents_collector
   },
