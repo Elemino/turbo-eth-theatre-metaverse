@@ -8,7 +8,12 @@ const nextConfig = {
   },
   swcMinify: true,
   env: {
-    mode: process.env.NODE_ENV,
+    mode=: process.env.NODE_ENV,
+    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+    NEXT_URL:http://localhost:3001,
+    NEXTAUTH_URL:http://localhost:3001,
+
+DATABASE_NAME=iztalents_collector
   },
   experimental: {
     appDir: true,
