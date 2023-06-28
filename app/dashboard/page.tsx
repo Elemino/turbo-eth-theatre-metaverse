@@ -11,6 +11,8 @@ import { useAppDispatch } from "./store/redux-hooks/hooks";
 
 export default function PageDashboard() {
 
+  const leaderboard = () => {
+
   const [status, setStatus] = useState("Added");
   const showUsers = true;
   const dispatch = useAppDispatch();
@@ -28,6 +30,19 @@ export default function PageDashboard() {
                 console.log(e.target.value);
                 setStatus(e.target.value);
               }}
+            />
+           
+            <div className="flex flex-wrap">
+              <User name="Jim" status={status} />
+              <User name="Alan" status="Added" />
+              <User name="Mike" status={status} />
+              <User name="John" status="Added" />
+            
+            </div>
+          </>
+        ) : (
+          <p>Users can't be found</p>
+        )}
       <motion.div
         className="flex-center flex h-full w-full"
         variants={FADE_DOWN_ANIMATION_VARIANTS}
@@ -58,4 +73,5 @@ export default function PageDashboard() {
       </motion.div>
     </>
   )
+}
 }
